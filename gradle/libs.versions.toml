@@ -1,0 +1,13 @@
+[versions]
+kotlin = "1.9.21"
+
+plasmovoice = "2.1.0-SNAPSHOT"
+pv-gradle-plugin = "1.0.2-SNAPSHOT"
+
+[libraries]
+plasmovoice = { module = "su.plo.voice.api:server", version.ref = "plasmovoice" }
+
+[plugins]
+pv-entrypoints = { id = "su.plo.voice.plugin.entrypoints", version.ref = "pv-gradle-plugin" }
+pv-kotlin-relocate = { id = "su.plo.voice.plugin.relocate-kotlin", version.ref = "pv-gradle-plugin" }
+pv-java-templates = { id = "su.plo.voice.plugin.java-templates", version.ref = "pv-gradle-plugin" }
